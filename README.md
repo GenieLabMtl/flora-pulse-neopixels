@@ -4,6 +4,14 @@ flora-pulse-neopixels
 Integration of Adafruit Flora with Pulse Sensor Amped and NeoPixel.  Pulse sensor displays heartbeat on the Flora's onboard NeoPixel.  The BPM value is represented on an external NeoPixel, varying from green (low) to red (high).
 
 
+Prerequisites
+-------------
+
+- Arduino IDE >=1.6
+- [Adafruit board support package for Arduino](https://learn.adafruit.com/adafruit-arduino-ide-setup/arduino-1-dot-6-x-ide)
+- [NeoPixel Arduino library](https://learn.adafruit.com/adafruit-neopixel-uberguide/arduino-library-installation) 
+
+
 Installation
 ------------
 
@@ -16,7 +24,7 @@ Connections
 The Pulse Sensor is connected as follows:
 
 | Pulse Sensor Wire | Flora Pin | Description   |
-|------------------:|:---------:|:--------------|
+|:------------------|:---------:|:--------------|
 | Black             | GND       | Ground        |
 | Red               | VBATT     | 5VDC          |
 | Purple            | #12       | Analog signal |
@@ -24,7 +32,7 @@ The Pulse Sensor is connected as follows:
 The external NeoPixel is connected as follows:
 
 | NeoPixel Pin | Flora Pin | Description   |
-|-------------:|:---------:|:--------------|
+|:-------------|:---------:|:--------------|
 | -            | GND       | Ground        |
 | +            | VBATT     | 5VDC          |
 | Arrow In     | #6        | Comms         |
